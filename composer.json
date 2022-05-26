@@ -1,0 +1,17 @@
+{
+    "name": "gloatingcord26/mini-framework",
+    "autoload": {
+        "psr-4": {
+            "Main\\": "Classes/",
+            "Files\\": "Files/",
+            "Controller\\": "Controllers/"
+        }
+    },
+    "require": {
+        "phpstan/phpstan": "^1.7",
+        "psr/http-message": "^1.0",
+        "psr/log": "^3.0",
+        "psr/http-server-middleware": "^1.0",
+        "psr/container": "^2.0"
+    }
+}
