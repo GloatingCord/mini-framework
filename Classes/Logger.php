@@ -37,7 +37,7 @@ class Logger implements LoggerInterface
             'message' => $message,
         ];
 
-        file_put_contents('../Log/Log.json', json_encode($array, JSON_PRETTY_PRINT));
+        file_put_contents('../Log/Log-info.json', json_encode($array, JSON_PRETTY_PRINT));
     }
 
     public function debug(string|\Stringable $message, array $context = []): void
