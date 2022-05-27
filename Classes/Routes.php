@@ -38,4 +38,5 @@ class Routes
 
         call_user_func($fn, $this);
     }
+    
 }

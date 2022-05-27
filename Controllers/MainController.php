@@ -2,6 +2,8 @@
 
 namespace Controller;
 
+use Main\Logger;
+
 class MainController
 {
     public function index()
@@ -12,6 +14,10 @@ class MainController
     public function hello()
     {
         echo 'hello!!!';
+
+        $log = new Logger();
+
+        $log->info('hello world');
     }
 
     public function hei()
