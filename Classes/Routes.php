@@ -7,17 +7,17 @@ class Routes
     public array $get_routes = [];
     public array $post_routes = [];
 
-    public function get($url, $fn)
+    public function get(string $url, mixed $fn): void
     {
         $this->get_routes[$url] = $fn;
     }
 
-    public function post($url, $fn)
+    public function post(string $url, mixed $fn): void
     {
         $this->post_routes[$url] = $fn;
     }
 
-    public function resolve()
+    public function resolve(): void
     {
         $path_info = $_SERVER['PATH_INFO'] ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
@@ -30,7 +30,7 @@ class Routes
             $fn = $this->post_routes[$path_info] ?? null;
         }
 
-        if (!$fn) {
+        if (!isset($fn)) {
             echo '404';
 
             exit;
@@ -38,5 +38,4 @@ class Routes
 
         call_user_func($fn, $this);
     }
-    
 }
