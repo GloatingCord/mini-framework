@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 namespace Main;
 
-class Routes 
+class Routes
 {
     public array $get_routes = [];
     public array $post_routes = [];
@@ -17,21 +17,22 @@ class Routes
         $this->post_routes[$url] = $fn;
     }
 
-    public function resolve() 
+    public function resolve()
     {
-        $path_info = $_SERVER["PATH_INFO"] ?? "/";
-        $method = $_SERVER["REQUEST_METHOD"];
+        $path_info = $_SERVER['PATH_INFO'] ?? '/';
+        $method = $_SERVER['REQUEST_METHOD'];
 
-        if ($method === "GET") {
+        if ('GET' === $method) {
             $fn = $this->get_routes[$path_info] ?? null;
         }
 
-        if ($method === "POST") {
+        if ('POST' === $method) {
             $fn = $this->post_routes[$path_info] ?? null;
         }
 
         if (!$fn) {
-            echo "404";
+            echo '404';
+
             exit;
         }
 
