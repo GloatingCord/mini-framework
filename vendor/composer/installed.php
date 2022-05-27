@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '47670db1c24fc2125d8ad3c1a3832862058a68c0',
         'name' => 'gloatingcord26/mini-framework',
         'dev' => true,
     ),
     'versions' => array(
         'gloatingcord26/mini-framework' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '47670db1c24fc2125d8ad3c1a3832862058a68c0',
             'dev_requirement' => false,
         ),
         'phpstan/phpstan' => array(
