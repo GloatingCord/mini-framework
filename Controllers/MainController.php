@@ -6,12 +6,12 @@ use Main\Logger;
 
 class MainController
 {
-    public function index()
+    public function index(): string
     {
-        echo 'index';
+        return 'index';
     }
 
-    public function hello()
+    public function hello(): void
     {
         echo 'hello!!!';
 
@@ -20,12 +20,12 @@ class MainController
         $log->info('hello world');
     }
 
-    public function hei()
+    public function hei(): void
     {
         echo 'hei!!!!';
     }
 
-    public function error()
+    public function error(): void
     {
         echo '404';
     }

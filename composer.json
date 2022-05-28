@@ -14,16 +14,22 @@
         "psr/container": "^2.0"
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.7"
+        "phpstan/phpstan": "^1.7",
+        "phpunit/phpunit": "^9.5",
+        "phpmd/phpmd": "^2.12"
     },
     "scripts": {
         "phpstan": [
-            "phpstan analyze --level max src"
+            "phpstan analyze --level max Public/ Classes/ Controllers/"
         ],
         "phpmd": [
-            "phpmd src xml rulesets.xml"
+            "phpmd Public/ xml test/rulesets.xml"
+        ],
+        "phpunit": [
+            "vendor/bin/phpunit test/OutputTest.php"
         ],
         "test": [
+            "@phpunit",
             "@phpmd",
             "@phpstan"
         ]

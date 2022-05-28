@@ -2,40 +2,43 @@
 
 namespace Main;
 
+use Main\Server;
+
 class Routes
 {
-    public array $get_routes = [];
-    public array $post_routes = [];
 
-    public function get(string $url, mixed $fn): void
+    public array $getRoutes = [];
+    public array $postRoutes = [];
+
+    public function get(string $url, mixed $func): void
     {
-        $this->get_routes[$url] = $fn;
+        $this->getRoutes[$url] = $func;
     }
 
-    public function post(string $url, mixed $fn): void
+    public function post(string $url, mixed $func): void
     {
-        $this->post_routes[$url] = $fn;
+        $this->postRoutes[$url] = $func;
     }
 
     public function resolve(): void
     {
-        $path_info = $_SERVER['PATH_INFO'] ?? '/';
+        $pathInfo = $_SERVER["PATH_INFO"] ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ('GET' === $method) {
-            $fn = $this->get_routes[$path_info] ?? null;
+            $func = $this->getRoutes[$pathInfo] ?? null;
         }
 
         if ('POST' === $method) {
-            $fn = $this->post_routes[$path_info] ?? null;
+            $func = $this->postRoutes[$pathInfo] ?? null;
         }
 
-        if (!isset($fn)) {
+        if (!isset($func)) {
             echo '404';
-
-            exit;
         }
-
-        call_user_func($fn, $this);
+        
+        if (isset($func)) {
+            call_user_func($func, $this);   
+        }
     }
 }
