@@ -2,10 +2,10 @@
 
 require_once 'start_script.php';
 
-use Controller\MainController;
-use Main\Routes;
+use App\Controlling\MainController;
+use Framework\Routing\Router;
 
-$route = new Routes();
+$route = new Router();
 $main_controller = new MainController();
 
 $route->get('/', [$main_controller, 'index']);

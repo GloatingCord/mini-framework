@@ -10,8 +10,8 @@ class ComposerStaticInit35359ec60e14e9af2a14b1364ff70adc
         '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -43,13 +43,9 @@ class ComposerStaticInit35359ec60e14e9af2a14b1364ff70adc
             'PhpParser\\' => 10,
             'PDepend\\' => 8,
         ),
-        'M' => 
-        array (
-            'Main\\' => 5,
-        ),
         'F' => 
         array (
-            'Files\\' => 6,
+            'Framework\\' => 10,
         ),
         'D' => 
         array (
@@ -58,9 +54,12 @@ class ComposerStaticInit35359ec60e14e9af2a14b1364ff70adc
         ),
         'C' => 
         array (
-            'Controller\\' => 11,
             'Composer\\XdebugHandler\\' => 23,
             'Composer\\Pcre\\' => 14,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -68,8 +67,8 @@ class ComposerStaticInit35359ec60e14e9af2a14b1364ff70adc
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -128,13 +127,9 @@ class ComposerStaticInit35359ec60e14e9af2a14b1364ff70adc
         array (
             0 => __DIR__ . '/..' . '/pdepend/pdepend/src/main/php/PDepend',
         ),
-        'Main\\' => 
+        'Framework\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Classes',
-        ),
-        'Files\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/Files',
+            0 => __DIR__ . '/../..' . '/framework',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -144,10 +139,6 @@ class ComposerStaticInit35359ec60e14e9af2a14b1364ff70adc
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'Controller\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/Controllers',
-        ),
         'Composer\\XdebugHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/xdebug-handler/src',
@@ -155,6 +146,10 @@ class ComposerStaticInit35359ec60e14e9af2a14b1364ff70adc
         'Composer\\Pcre\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 

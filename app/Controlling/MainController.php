@@ -1,14 +1,14 @@
 <?php
 
-namespace Controller;
+namespace App\Controlling;
 
-use Main\Logger;
+use Framework\Classes\Logger;
 
 class MainController
 {
-    public function index(): string
+    public function index(): void
     {
-        return 'index';
+        echo 'index';
     }
 
     public function hello(): void

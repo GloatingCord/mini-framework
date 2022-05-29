@@ -1,6 +1,6 @@
 <?php
 
-namespace Main;
+namespace Framework\Classes;
 
 use Psr\Log\LoggerInterface;
 

@@ -1,12 +1,9 @@
 <?php
 
-namespace Main;
+namespace Framework\Routing;
 
-use Main\Server;
-
-class Routes
+class Router
 {
-
     public array $getRoutes = [];
     public array $postRoutes = [];
 
@@ -22,7 +19,7 @@ class Routes
 
     public function resolve(): void
     {
-        $pathInfo = $_SERVER["PATH_INFO"] ?? '/';
+        $pathInfo = $_SERVER['PATH_INFO'] ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
 
         if ('GET' === $method) {
@@ -36,9 +33,9 @@ class Routes
         if (!isset($func)) {
             echo '404';
         }
-        
+
         if (isset($func)) {
-            call_user_func($func, $this);   
+            call_user_func($func, $this);
         }
     }
 }

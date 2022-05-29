@@ -2,9 +2,8 @@
     "name": "gloatingcord26/mini-framework",
     "autoload": {
         "psr-4": {
-            "Main\\": "Classes/",
-            "Files\\": "Files/",
-            "Controller\\": "Controllers/"
+            "App\\": "app/",
+            "Framework\\": "framework/"
         }
     },
     "require": {
@@ -20,13 +19,13 @@
     },
     "scripts": {
         "phpstan": [
-            "phpstan analyze --level max Public/ Classes/ Controllers/"
+            "phpstan analyze --level max Public/ framework/Classes/ app/Controlling/"
         ],
         "phpmd": [
-            "phpmd Public/ xml test/rulesets.xml"
+            "phpmd Public/ xml Testing/rulesets.xml"
         ],
         "phpunit": [
-            "vendor/bin/phpunit test/OutputTest.php"
+            "vendor/bin/phpunit Testing/OutputTest.php"
         ],
         "test": [
             "@phpunit",

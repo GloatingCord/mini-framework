@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e9a342ef49259eb4d86144e4eeddb9fed4c9fc90',
+        'reference' => '0769141bf4f816dcf7ba6a9d2e6a5eacf0718a9f',
         'name' => 'gloatingcord26/mini-framework',
         'dev' => true,
     ),
@@ -43,7 +43,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e9a342ef49259eb4d86144e4eeddb9fed4c9fc90',
+            'reference' => '0769141bf4f816dcf7ba6a9d2e6a5eacf0718a9f',
             'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(
