@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0769141bf4f816dcf7ba6a9d2e6a5eacf0718a9f',
+        'reference' => 'ef8a8b16dc07c21620c91cf58a05bc2dc8fe43e9',
         'name' => 'gloatingcord26/mini-framework',
         'dev' => true,
     ),
@@ -43,7 +43,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0769141bf4f816dcf7ba6a9d2e6a5eacf0718a9f',
+            'reference' => 'ef8a8b16dc07c21620c91cf58a05bc2dc8fe43e9',
             'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(
@@ -137,12 +137,12 @@
             'dev_requirement' => true,
         ),
         'phpstan/phpstan' => array(
-            'pretty_version' => '1.7.2',
-            'version' => '1.7.2.0',
+            'pretty_version' => '1.7.3',
+            'version' => '1.7.3.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpstan/phpstan',
             'aliases' => array(),
-            'reference' => 'c602f80d66ba425943b0f4aaa27010c822dd8f87',
+            'reference' => '48c4621b1a6dde32aab2e9a79658b843ffb614f7',
             'dev_requirement' => true,
         ),
         'phpunit/php-code-coverage' => array(

@@ -19,10 +19,10 @@
     },
     "scripts": {
         "phpstan": [
-            "phpstan analyze --level max Public/ framework/Classes/ app/Controlling/"
+            "vendor/bin/phpstan analyze --level max public/ framework/Classes/ framework/Routing app/Controlling/"
         ],
         "phpmd": [
-            "phpmd Public/ xml Testing/rulesets.xml"
+            "phpmd framework/ xml Testing/rulesets.xml"
         ],
         "phpunit": [
             "vendor/bin/phpunit Testing/OutputTest.php"

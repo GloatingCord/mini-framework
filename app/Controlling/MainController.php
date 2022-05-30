@@ -24,9 +24,4 @@ class MainController
     {
         echo 'hei!!!!';
     }
-
-    public function error(): void
-    {
-        echo '404';
-    }
 }
