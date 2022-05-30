@@ -1,9 +1,9 @@
 <?php
 
-require_once 'start_script.php';
-
 use App\Controlling\MainController;
 use Framework\Routing\Router;
+
+require_once __DIR__.'/start_script.php';
 
 $route = new Router();
 $main_controller = new MainController();

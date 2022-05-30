@@ -17,7 +17,7 @@ class MainController
 
         $log = new Logger();
 
-        $log->info('hello world');
+        $log->info('hello');
     }
 
     public function hei(): void
