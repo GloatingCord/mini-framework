@@ -6,9 +6,8 @@ use Framework\Classes\Logger;
 
 class MainController
 {
-    public function index(): void
+    public function index()
     {
-        echo 'index';
     }
 
     public function hello(): void

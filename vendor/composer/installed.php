@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e2e2450bd9a50c82b46e7eb421c8dd8975aea975',
+        'reference' => 'ecc34049078115032b8b16996696f96cf7fe3f94',
         'name' => 'gloatingcord26/mini-framework',
         'dev' => true,
     ),
@@ -43,7 +43,16 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e2e2450bd9a50c82b46e7eb421c8dd8975aea975',
+            'reference' => 'ecc34049078115032b8b16996696f96cf7fe3f94',
+            'dev_requirement' => false,
+        ),
+        'guzzlehttp/psr7' => array(
+            'pretty_version' => '2.2.1',
+            'version' => '2.2.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../guzzlehttp/psr7',
+            'aliases' => array(),
+            'reference' => 'c94a94f120803a18554c1805ef2e539f8285f9a2',
             'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(
@@ -214,6 +223,21 @@
                 0 => '1.1|2.0',
             ),
         ),
+        'psr/http-factory' => array(
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/http-factory',
+            'aliases' => array(),
+            'reference' => '12ac7fcd07e5b077433f5f2bee95b3a771bf61be',
+            'dev_requirement' => false,
+        ),
+        'psr/http-factory-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
+        ),
         'psr/http-message' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
@@ -222,6 +246,12 @@
             'aliases' => array(),
             'reference' => 'f6561bf28d520154e4b0ec72be95418abe6d9363',
             'dev_requirement' => false,
+        ),
+        'psr/http-message-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
         ),
         'psr/http-server-handler' => array(
             'pretty_version' => '1.0.1',
@@ -248,6 +278,15 @@
             'install_path' => __DIR__ . '/../psr/log',
             'aliases' => array(),
             'reference' => 'fe5ea303b0887d5caefd3d431c3e61ad47037001',
+            'dev_requirement' => false,
+        ),
+        'ralouphie/getallheaders' => array(
+            'pretty_version' => '3.0.3',
+            'version' => '3.0.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ralouphie/getallheaders',
+            'aliases' => array(),
+            'reference' => '120b605dfeb996808c31b6477290a714d356e822',
             'dev_requirement' => false,
         ),
         'sebastian/cli-parser' => array(
