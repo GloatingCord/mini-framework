@@ -1,6 +1,6 @@
 <?php
 
-namespace Framework\Routing;
+namespace GloatingCord26\Framework\Routing;
 
 class Router
 {

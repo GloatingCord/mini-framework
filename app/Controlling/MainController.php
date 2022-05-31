@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Controlling;
+namespace GloatingCord26\App\Controlling;
 
-use Framework\Classes\Logger;
+use GloatingCord26\Framework\Classes\Logger;
 
 class MainController
 {
     public function index()
     {
+        echo 'index';
     }
 
     public function hello(): void

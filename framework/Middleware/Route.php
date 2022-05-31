@@ -1,6 +1,6 @@
 <?php
 
-namespace Framework\Middleware;
+namespace GloatingCord26\Framework\Middleware;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;

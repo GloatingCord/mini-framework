@@ -1,7 +1,7 @@
 <?php
 
-use App\Controlling\MainController;
-use Framework\Routing\Router;
+use GloatingCord26\App\Controlling\MainController;
+use GloatingCord26\Framework\Routing\Router;
 
 require_once __DIR__.'/start_script.php';
 

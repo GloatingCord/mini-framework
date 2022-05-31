@@ -1,6 +1,6 @@
 <?php
 
-namespace Framework\Classes;
+namespace GloatingCord26\Framework\Classes;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

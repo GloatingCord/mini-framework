@@ -2,8 +2,8 @@
     "name": "gloatingcord26/mini-framework",
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Framework\\": "framework/"
+            "GloatingCord26\\App\\": "app/",
+            "GloatingCord26\\Framework\\": "framework/"
         }
     },
     "require": {
