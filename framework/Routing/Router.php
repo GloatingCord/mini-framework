@@ -31,9 +31,9 @@ class Router
             $func = $this->postRoutes[$pathInfo] ?? null;
         }
 
-        if (!isset($func)) {
-            $this->redirect('/');
-        }
+        /*         if (!isset($func)) {
+                    $this->redirect('/');
+                } */
 
         if (isset($func)) {
             call_user_func($func, $this);
