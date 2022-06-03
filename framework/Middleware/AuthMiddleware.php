@@ -2,6 +2,7 @@
 
 namespace GloatingCord26\Framework\Middleware;
 
+use Laminas\Diactoros\Response;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
@@ -15,16 +16,8 @@ class AuthMiddleware implements MiddlewareInterface
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        $token = $request->getHeaderLine('Authorizaton');
-
-        if (0 === strpos($token, 'Bearer')) {
-            return $handler->handle($request);
-        }
-
-        $token = trim(substr($token, 7));
-
-        if (isset($this->keys[$token])) {
-            $request = $request->withAttribute('user', $this->keys[$token]);
+        if ('/api/images' === $request->getUri()->getPath()) {
+            return new Response('test', 200, $this->keys);
         }
 
         return $handler->handle($request);

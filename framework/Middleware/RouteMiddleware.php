@@ -17,6 +17,12 @@ class RouteMiddleware implements MiddlewareInterface
     {
         $path = $request->getUri()->getPath();
 
+        if ('/' === $path) {
+            $handler = new IndexHandler();
+
+            return $handler->handle($request);
+        }
+
         if (strpos($path, $this->basePath)) {
             $handler = new NotFoundHandler();
 

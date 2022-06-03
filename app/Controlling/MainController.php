@@ -8,7 +8,7 @@ class MainController
 {
     public function index()
     {
-        echo 'index';
+        return '<h1>index</h1>';
     }
 
     public function hello(): void
@@ -20,8 +20,8 @@ class MainController
         $log->info('hello');
     }
 
-    public function hei(): void
+    public function notFound()
     {
-        echo 'hei!!!!';
+        return '<h1>Cannot find what you are looking for</h1>';
     }
 }

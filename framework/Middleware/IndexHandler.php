@@ -8,12 +8,12 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
-class NotFoundHandler implements RequestHandlerInterface
+class IndexHandler implements RequestHandlerInterface
 {
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         $mainController = new MainController();
 
-        return new HtmlResponse($mainController->notFound(), 404, ['Error' => 'Something worng has happoned lol']);
+        return new HtmlResponse($mainController->index());
     }
 }
