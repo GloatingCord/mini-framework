@@ -2,6 +2,7 @@
 
 namespace GloatingCord26\Framework\Middleware;
 
+use GloatingCord26\Framework\Classes\Logger;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
@@ -24,7 +25,9 @@ class LoggingMiddleware implements MiddlewareInterface
             $data = array_merge($data, $additional($request));
         }
 
-        error_log(json_encode($data));
+        $logger = new Logger();
+
+        $logger->error('Page not found', $data);
 
         return $handler->handle($request);
     }

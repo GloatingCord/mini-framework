@@ -2,6 +2,8 @@
 
 namespace GloatingCord26\Framework\Middleware;
 
+use GloatingCord26\Framework\Middleware\Handler\IndexHandler;
+use GloatingCord26\Framework\Middleware\Handler\NotFoundHandler;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;

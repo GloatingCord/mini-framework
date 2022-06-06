@@ -20,6 +20,7 @@ class Logger implements LoggerInterface
 
     public function error(string|\Stringable $message, array $context = []): void
     {
+        file_put_contents(__DIR__.'/../Log/Error/Log-info'.date('c').'.json', json_encode($context, JSON_PRETTY_PRINT));
     }
 
     public function warning(string|\Stringable $message, array $context = []): void
@@ -32,12 +33,7 @@ class Logger implements LoggerInterface
 
     public function info(string|\Stringable $message, array $context = []): void
     {
-        $array = [
-            'date' => date('c'),
-            'message' => $message,
-        ];
-
-        file_put_contents('../Log/Log-info.json', json_encode($array, JSON_PRETTY_PRINT));
+        file_put_contents(__DIR__.'/../Log/Info/Log-info'.date('c').'.json', json_encode($context, JSON_PRETTY_PRINT));
     }
 
     public function debug(string|\Stringable $message, array $context = []): void
