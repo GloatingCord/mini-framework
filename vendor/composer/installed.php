@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '374d5827de46cff8a192696bbc73f928f5988ad4',
+        'reference' => 'cabd1b3d71d79f58de5ce5d229ec911da8f1e800',
         'name' => 'gloatingcord26/mini-framework',
         'dev' => true,
     ),
@@ -43,7 +43,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '374d5827de46cff8a192696bbc73f928f5988ad4',
+            'reference' => 'cabd1b3d71d79f58de5ce5d229ec911da8f1e800',
             'dev_requirement' => false,
         ),
         'laminas/laminas-diactoros' => array(
@@ -476,7 +476,7 @@
             'install_path' => __DIR__ . '/../symfony/polyfill-ctype',
             'aliases' => array(),
             'reference' => '6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4',
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/polyfill-mbstring' => array(
             'pretty_version' => 'v1.26.0',
@@ -485,7 +485,7 @@
             'install_path' => __DIR__ . '/../symfony/polyfill-mbstring',
             'aliases' => array(),
             'reference' => '9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e',
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/service-contracts' => array(
             'pretty_version' => 'v3.1.0',
@@ -510,6 +510,15 @@
             'aliases' => array(),
             'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
             'dev_requirement' => true,
+        ),
+        'twig/twig' => array(
+            'pretty_version' => 'v3.4.1',
+            'version' => '3.4.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../twig/twig',
+            'aliases' => array(),
+            'reference' => 'e939eae92386b69b49cfa4599dd9bead6bf4a342',
+            'dev_requirement' => false,
         ),
         'webmozart/assert' => array(
             'pretty_version' => '1.11.0',

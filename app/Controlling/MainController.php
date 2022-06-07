@@ -3,18 +3,22 @@
 namespace GloatingCord26\App\Controlling;
 
 use GloatingCord26\Framework\Classes\Logger;
+use Twig\Environment;
 
 class MainController
 {
     public function index()
     {
-        return '<h1>index</h1>';
+        $loader = new \Twig\Loader\FilesystemLoader('../Templates');
+        $twig = new Environment($loader);
+
+        return $twig->render('index.html', [
+            'name' => 'Fabien',
+        ]);
     }
 
     public function hello(): void
     {
-        echo 'hello!!!';
-
         $log = new Logger();
 
         $log->info('hello');

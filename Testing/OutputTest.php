@@ -4,7 +4,6 @@ namespace Framework\Testing;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use App\Controlling\MainController;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -13,11 +12,7 @@ use PHPUnit\Framework\TestCase;
  */
 final class OutputTest extends TestCase
 {
-    public function testExpectWordActualReverseWord(): void
+    public function testExpectHeader(): void
     {
-        $library = new MainController();
-        $this->expectOutputString('index');
-
-        echo $library->index();
     }
 }

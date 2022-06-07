@@ -13,11 +13,9 @@ class HeaderMiddleware implements MiddlewareInterface
         ServerRequestInterface $request,
         RequestHandlerInterface $handler
     ): ResponseInterface {
-        $response = $handler->handle($request);
-
         $csp = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src 'self'; worker-src 'self'; frame-ancestors 'self'; form-action 'self'; block-all-mixed-content; base-uri 'none'; manifest-src 'self'";
 
-        $response = $response
+        $response = $handler->handle($request)
             ->withHeader('Server', 'web_server.bat')
             ->withHeader('X-Powered-By', 'HTML')
             ->withHeader('X-Frame-Options', 'DENY')
