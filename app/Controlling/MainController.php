@@ -7,12 +7,15 @@ use Twig\Environment;
 
 class MainController
 {
+    public function __construct(public Environment $twig)
+    {
+    }
+
     public function index()
     {
-        $loader = new \Twig\Loader\FilesystemLoader('../Templates');
-        $twig = new Environment($loader);
+        var_dump($_SESSION);
 
-        return $twig->render('index.html', [
+        return $this->twig->render('index.html', [
             'name' => 'Fabien',
         ]);
     }

@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'cabd1b3d71d79f58de5ce5d229ec911da8f1e800',
+        'reference' => 'f53a89c44b594449176545537876b2d21f510b38',
         'name' => 'gloatingcord26/mini-framework',
         'dev' => true,
     ),
@@ -43,7 +43,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'cabd1b3d71d79f58de5ce5d229ec911da8f1e800',
+            'reference' => 'f53a89c44b594449176545537876b2d21f510b38',
             'dev_requirement' => false,
         ),
         'laminas/laminas-diactoros' => array(
@@ -155,12 +155,12 @@
             'dev_requirement' => true,
         ),
         'phpstan/phpstan' => array(
-            'pretty_version' => '1.7.10',
-            'version' => '1.7.10.0',
+            'pretty_version' => '1.7.12',
+            'version' => '1.7.12.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpstan/phpstan',
             'aliases' => array(),
-            'reference' => '25e069474cf00215b0f64c60a26230908ef3eefa',
+            'reference' => '32f10779d9cd88a9cbd972ec611a4148a3cbbc7e',
             'dev_requirement' => true,
         ),
         'phpunit/php-code-coverage' => array(
